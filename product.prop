@@ -56,7 +56,11 @@ debug.cpurend.vsync=false
 
 # Graphics
 debug.hwui.renderer=skiagl
+<<<<<<< HEAD
 debug.sf.disable_client_composition_cache=1
+=======
+debug.renderengine.backend=skiaglthreaded
+>>>>>>> 61a80097 (violet: prop: Disable SF client composition cache)
 debug.sf.enable_gl_backpressure=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1

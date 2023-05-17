@@ -8,11 +8,15 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
-SUPERIOR_OFFICIAL := true
+# Inherit some common DroidX UI stuff.
+$(call inherit-product, vendor/droidx/config/common.mk)
+
+#DroidX stuff
+DROIDX_BUILD_TYPE := OFFICIAL
+DROIDX_GAPPS := full
+
+#Device props
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_MATLOG := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 USE_MOTO_CALCULATOR := true
 
@@ -20,7 +24,7 @@ USE_MOTO_CALCULATOR := true
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_violet
+PRODUCT_NAME := droidx_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro

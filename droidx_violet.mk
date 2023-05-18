@@ -18,7 +18,6 @@ DROIDX_GAPPS := full
 #Device props
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
-USE_MOTO_CALCULATOR := true
 
 # MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)

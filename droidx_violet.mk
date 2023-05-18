@@ -11,16 +11,21 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common DroidX UI stuff.
 $(call inherit-product, vendor/droidx/config/common.mk)
 
-#DroidX stuff
+# MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
+# DroidX stuff
 DROIDX_BUILD_TYPE := OFFICIAL
 DROIDX_GAPPS := full
 
-#Device props
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_PIXEL_CHARGER := true
+# Blur
+TARGET_SUPPORTS_BLUR := true
 
-# MiuiCamera
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Charging Animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := droidx_violet

@@ -18,8 +18,10 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 DROIDX_BUILD_TYPE := OFFICIAL
 DROIDX_GAPPS := full
 
-# Blur
+# Device props
 TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080

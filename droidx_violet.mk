@@ -9,7 +9,7 @@
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common DroidX UI stuff.
-$(call inherit-product, vendor/droidx/config/common.mk)
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)

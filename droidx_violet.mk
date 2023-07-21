@@ -16,7 +16,7 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # DroidX stuff
 DROIDX_BUILD_TYPE := OFFICIAL
-DROIDX_GAPPS := full
+DROIDX_GAPPS := true
 
 # Device props
 TARGET_SUPPORTS_BLUR := true

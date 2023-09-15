@@ -1,4 +1,4 @@
-git clone https://gitlab.com/Drpto/android_vendor_MiuiCamera.git -b thirteen vendor/MiuiCamera
+git clone https://gitlab.com/Joker-V2/android_vendor_MiuiCamera.git -b thirteen vendor/MiuiCamera
 git clone https://github.com/SuperiorOS-Devices/vendor_xiaomi_violet.git -b thirteen vendor/xiaomi/violet --depth=1
 git clone https://github.com/SuperiorOS-Devices/kernel_xiaomi_violet.git -b thirteen kernel/xiaomi/violet --depth=1
 rm -rf prebuilts/clang/host/linux-x86/clang-r498229

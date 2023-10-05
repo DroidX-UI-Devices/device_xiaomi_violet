@@ -1213,3 +1213,6 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|4ba792ee3234dca4cd7ebbd7b3f9003
 # WiFi - from davinci-user 11 RKQ1.200826.002 21.6.11 release-keys
 vendor/bin/cnss-daemon|49166ade5d73d8f4a79cd8cc2e5db5ebb16dba1a
 vendor/bin/nv_mac|292eab960355eae44a338b2011b0032bc7df422e
+
+# Power-off charging daemon
+-bin/charger:bin/chargeonlymode

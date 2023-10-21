@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2018-2020 The LineageOS Project
 # Copyright (C) 2020 The PixelExperience Project
+# Copyright (C) 2023 The DroidX-UI Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,11 +9,8 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common DroidX UI stuff.
+# Inherit some common SuperiorOS stuff.
 $(call inherit-product, vendor/droidx/config/common_full_phone.mk)
-
-# MiuiCamera
-$(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # DroidX stuff
 DROIDX_BUILD_TYPE := OFFICIAL

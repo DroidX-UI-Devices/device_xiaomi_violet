@@ -11,10 +11,6 @@
 /data/vendor/thermal(/.*)?      u:object_r:thermal_data_file:s0
 /data/vendor/mac_addr(/.*)?     u:object_r:vendor_wifi_vendor_data_file:s0
 
-# Dolby
-/data/vendor/dolby(/.*)?                                                               u:object_r:vendor_data_file:s0
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service               u:object_r:hal_dms_default_exec:s0
-
 # Executable
 /vendor/bin/init\.insmod\.sh    u:object_r:init-insmod-sh_exec:s0
 
@@ -32,8 +28,7 @@
 # HALs
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service\.xiaomi_sm6150                   u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.lights-service\.xiaomi_sm6150                                         u:object_r:hal_light_default_exec:s0
-/vendor/bin/hw/android\.hardware\.power-service\.sm6150-libperfmgr u:object_r:hal_power_default_exec:s0
-/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.xiaomi_sm6150                                 u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service\.sm6150-libperfmgr                                      u:object_r:hal_power_default_exec:s0
 
 # Health
 /sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/(/.*)?                                                                         u:object_r:sysfs_battery_supply:s0

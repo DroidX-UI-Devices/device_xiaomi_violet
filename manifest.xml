@@ -25,7 +25,8 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
-<manifest version="1.0" type="device" target-level="3">
+<manifest version="1.0" type="device" target-level="4">
+    <kernel target-level="5" />
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -330,15 +331,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          <instance>qti.ims.connectionmanagerservice</instance>
        </interface>
    </hal>
-    <hal format="hidl">
-        <name>vendor.dolby.hardware.dms</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IDms</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
    <hal format="hidl">
        <name>vendor.qti.ims.factory</name>
        <transport>hwbinder</transport>
@@ -366,10 +358,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.drm</name>
-        <transport>hwbinder</transport>
     </hal>
     <!--ANT-->
     <hal format="hidl">

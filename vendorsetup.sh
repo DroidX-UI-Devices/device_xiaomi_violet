@@ -4,10 +4,10 @@ git clone https://github.com/crdroidandroid/android_kernel_xiaomi_violet.git -b 
 
 # Kernel clang stuff
 rm -rf prebuilts/clang/host/linux-x86/clang-r510928
-git clone --depth=1 https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r510928.git -b main prebuilts/clang/host/linux-x86/clang-r510928
+git clone --depth=1 https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r510928.git -b 14.0 prebuilts/clang/host/linux-x86/clang-r510928
 
 # Firmware stuff
-git clone https://gitlab.com/crdroidandroid/android-vendor-xiaomi-firmware-violet.git -b 14.0 vendor/xiaomi-firmware --depth=1
+# git clone https://gitlab.com/crdroidandroid/android-vendor-xiaomi-firmware-violet.git -b 14.0 vendor/xiaomi-firmware --depth=1
 
 # Device clangs stuff
 rm -rf packages/resources/devicesettings

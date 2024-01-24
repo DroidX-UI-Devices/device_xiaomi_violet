@@ -209,7 +209,7 @@ PRODUCT_PACKAGES += \
     qcom.fmradio
 
 # Firmware
-$(call inherit-product, vendor/xiaomi-firmware/violet/firmware.mk)
+# $(call inherit-product, vendor/xiaomi-firmware/violet/firmware.mk)
 
 # Framework detect
 PRODUCT_PACKAGES += \
